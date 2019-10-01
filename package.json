@@ -1,0 +1,14 @@
+{
+  "name": "js-lecture-code-snippets",
+  "version": "1.0.0",
+  "description": "Code Snippets from Lectures for HIS393: Digital History",
+  "main": "lec-05-01-js-intro.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matt Price",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "eslint": "^6.5.0"
+  }
+}

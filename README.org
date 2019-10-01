@@ -1,0 +1,7 @@
+# JS Code Snippets from HIS393
+
+This very basic repository contains code snippets from lecture slides in [[https://digitalhistory.github.io/][HIS393: Digital History]] at the University of Toronto. 
+
+The idea is just to provide direct access to all the code so you can try to follow along in your text editor, most likely using [[https://quokkajs.com/docs/][Quokka.js]] to evaluate variables and function calls. 
+
+## Usage
