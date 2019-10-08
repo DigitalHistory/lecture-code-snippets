@@ -1,0 +1,24 @@
+[
+  {"name": "African National Congress",
+   "founded": 1912,
+   "link": "https://en.wikipedia.org/wiki/African_National_Congress"
+  },
+  {"name": "Pan Africanist Congress",
+   "founded": 1959,
+   "link": "https://en.wikipedia.org/wiki/Pan_Africanist_Congress_of_Azania"
+  },
+  {"name": "South African Communist Party",
+   "founded": 1921,
+   "link": "https://en.wikipedia.org/wiki/South_African_Communist_Party"
+  },
+  {
+    "name": "Black Sash",
+    "founded": 1955,
+    "link": "https://en.wikipedia.org/wiki/Black_Sash"
+  },
+  {
+    "name": "South African Students' Organization",
+    "founded": 1968,
+    "link": "https://en.wikipedia.org/wiki/South_African_Students%27_Organisation"
+  }
+]
