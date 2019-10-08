@@ -14,21 +14,16 @@ console.log(m+n);
 console.log(s+n);
 
 let historians= ["Edward Gibbon", "Leopold von Ranke", "Edward Said", "Joan Scott"];
-for (h of historians) {
-  console.log(h);
-}
 
-let a = [];
-a 
+a = [];
 a.push("Edward Gibbon");
-a 
 a.push("Edward Said");
 a.push("Joan Scott");
-a
+
 console.log(a[1]);
 
 a.pop();
-a
+// a
 
 wardates=[1776, 1792, 1812, 1861, 1870, 1914, 1939, 1994]
 console.log("The time between The First and \
@@ -41,21 +36,19 @@ while (i < historians.length) {
     i+=1;
   }
 
-
 for (let i=0; i < historians.length ; i++){
   console.log(historians[i] + " was a historian.");
   i // this is not required, just here to show you a slight difference
 }
 
-for (i in historians) {
+for (let i in historians) {
   console.log(historians[i] + " was a historian.");
 }
 
-for (h of historians) {
+for (let h of historians) {
   console.log(h + " was a historian.");
 }
 
-i = 0;
 
 while (i < historians.length) {
   if (historians[i] === "Joan Scott") {
@@ -64,7 +57,7 @@ while (i < historians.length) {
   i +=1;
 };
 
-i=0
+
 while (i < historians.length) {
   if (historians[i] ==="Joan Scott") {
     console.log(historians[i] + " is my favourite.");
@@ -74,43 +67,10 @@ while (i < historians.length) {
   i +=1;
 };
 
-function robotCleaner () {
-  let output =  "I cleaned your room";
-  return output;
-}
-
-let r = robotCleaner();
-r
-
-function robotCleaner () {
-  let output =  `Ha, ha! I have replaced your robot cleaner! 
-Now your room is even messier! Bwa ha ha ha ha!`
-  return output;
-}
-
-r = robotCleaner();
-r
-
-function greatWriter (name) {
-let output = "Margaret Atwood was a great writer."
-return output
-}
-
-console.log(greatWriter("Margaret Atwood"))
-// console.log(greatWriter("Toni Morrison"))
-
-function evenGreaterWriter (name) {
-let output = name + " was a great writer."
-return output
-}
-
-console.log(evenGreaterWriter("Margaret Atwood"))
-// console.log(evenGreaterWriter("Toni Morrison"))
-
-a=["name", 0, "otherinfo"];
+let a=["name", 0, "otherinfo"];
 console.log(a[2]);
 console.log(a.length);
-//console.log(a[length]);
+console.log(a[length]);
 a.pop;
 
 function square(number) {
@@ -153,7 +113,7 @@ a = 'just some string';
 b= 'some other string';
 
 function scopeExample (anyString) {
-  let s = 'I set this value inside the function';
+  let a = 'I set this value inside the function';
 
   return ('inside the function, a="' + a + '", not ' + anyString);
 }
@@ -176,11 +136,44 @@ console.log(a);
 function returnArray (first, second, third) {
   // you can define the array using "new Array ()" or just "[ , , ]"
   // don't forget to return it
-  // return ; // add the falue here!
+  // return ; // add the value here!
 }
 
-myArray = returnArray (1, 3,5);
-myArray // quokka will display the value
+a = returnArray (1, 3,5);
+a  // quokka will display the value
+
+function robotCleaner () {
+  let output =  "I cleaned your room";
+  return output;
+}
+
+let r = robotCleaner();
+a
+
+function robotCleaner () {
+  let output =  `Ha, ha! I have replaced your robot cleaner! 
+Now your room is even messier! Bwa ha ha ha ha!`
+  return output;
+}
+
+a = robotCleaner();
+a
+
+function greatWriter (name) {
+let output = "Margaret Atwood was a great writer."
+return output
+}
+
+console.log(greatWriter("Margaret Atwood"))
+// console.log(greatWriter("Toni Morrison"))
+
+function evenGreaterWriter (name) {
+let output = name + " was a great writer."
+return output
+}
+
+console.log(evenGreaterWriter("Margaret Atwood"))
+// console.log(evenGreaterWriter("Toni Morrison"))
 
 let myFruit="orange",
     mySandwich = "just some bread!",
@@ -198,7 +191,7 @@ eat (myFruit);
 //eat (myCookie);
 //eat (myCandy);
 
-let myLunch = {};
+myLunch = {};
 
 
 myLunch = {
@@ -209,6 +202,12 @@ myLunch = {
 myLunch["snacks"]=mySnacks;
 myLunch;
 
+myLunch = {
+  fruit: "orange",
+  sandwich: mySandwich
+};
+
+myLunch["snacks"]=mySnacks;
 
 function eatLunch (someLunch) {
   let output = "";
@@ -272,8 +271,7 @@ let greatWar = {
     scale: "Catastrophe"
   }
 
-//  console.log(greatWar["name"] + " lasted for " +
-//  (greatWar.end - greatWar.start) + " years.");
+//  console.log(greatWar["name"] + " lasted for " + (greatWar.end - greatWar.start) + " years.");
 
 greatWar = {
     name: "The First World War",
@@ -305,13 +303,7 @@ for (person of people) {
   }
 };
 
-let goodGuys = ["CA", "UK", "US"];
-let badGuys=["DE", "AH"];
-let people = [
-  {name: "Kaiser Wilhelm",
-   nat: "DE"},
-  {name:"Winston Churchill",
-   nat: "UK"}];
+
 for (person of people) {
   if (badGuys.includes(person.nat)) {
     console.log(person.name + ": BOOOOOOOOOOOO!!!");
